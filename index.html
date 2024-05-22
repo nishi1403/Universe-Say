@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>UNIVERSE SAY</title>
+    <link rel="stylesheet" href="web.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        transition: background-color 0.3s ease;
+        background-color: #ffffff; /* Default light mode background color */
+        color: #000000; /* Default light mode text color */
+      }
+
+      .dark-mode {
+        background-color: #000000; /* Dark mode background color */
+        color: #ffffff; /* Dark mode text color */
+        .toggle-btn {
+          border: none;
+          background-color: transparent;
+          font-size: 20px;
+          color: rgb(3, 0, 0);
+        }
+      }
+
+      /* Toggle button styles */
+      .toggle-btn {
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        font-size: 20px;
+        color: rgb(236, 226, 226);
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function toggleDarkMode() {
+        var body = document.body;
+        body.classList.toggle("dark-mode");
+      }
+    </script>
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><span class="one">UNIVERSE</span><span class="two">SAY</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <button class="toggle-btn" onclick="toggleDarkMode()">
+              <i class="bi bi-brightness-high-fill"></i>
+            </button>
+
+            <a class="nav-link active" aria-current="page" href="#article"
+              >Articles</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://img.freepik.com/free-photo/glowing-spaceship-orbits-planet-starry-galaxy-generated-by-ai_188544-9655.jpg?size=626&ext=jpg&ga=GA1.1.2082370165.1716163200&semt=sph"
+            class="d-block w-100"
+            alt="..."
+            style="height: 90vh"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://facts.net/wp-content/uploads/2020/03/AdobeStock_105677222.jpeg"
+            class="d-block w-100"
+            alt="..."
+            style="height: 90vh"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-3_1562-748.jpg"
+            class="d-block w-100"
+            alt="..."
+            style="height: 90vh"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://www.esa.int/var/esa/storage/images/esa_multimedia/videos/2021/10/understanding_our_universe/23533326-1-eng-GB/Understanding_our_Universe_pillars.png"
+            class="d-block w-100"
+            alt="..."
+            style="height: 90vh"
+          />
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="https://assets-eu-01.kc-usercontent.com/80e06f8f-fc39-0158-c90c-a3da02f900f2/0b1a19c2-f02b-46a7-81ad-10fc68f4788e/universe-nebula-banner-2.jpg?w=1920&h=1080&auto=format&fit=crop"
+            class="d-block w-100"
+            alt="..."
+            style="height: 90vh"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <hr />
+
+    <div class="articles" id="article">
+      <h1 class="art">ARTICLES</h1>
+      <hr />
+
+      <div class="meteor">
+        <div class="row">
+          <div class="col col-sm-12 col-lg-6">
+            <div class="photo">
+              <img
+                src="https://i.pinimg.com/originals/74/d6/ff/74d6ff9f2ffa4c61bed3b775b424cab0.gif"
+              />
+            </div>
+          </div>
+          <div class="col col-sm-12 col-lg-6">
+            <div class="content">
+              <h2>METEOR</h2>
+              <p>
+                A meteor, often seen as a "shooting star," is a spectacular
+                phenomenon resulting from a meteoroid entering the Earth's
+                atmosphere at high velocity. As the meteoroid encounters
+                atmospheric friction, it heats up and creates a bright streak of
+                light, captivating observers on the ground. These meteoroids,
+                which originate from comets, asteroids, or other celestial
+                bodies, can produce stunning meteor showers when Earth passes
+                through their debris trails, such as the Perseids or Geminids.
+                While most meteoroids disintegrate in the atmosphere, those that
+                survive the fiery descent and reach Earth's surface are called
+                meteorites. Studying meteors and meteorites provides valuable
+                insights into the early solar system and planetary formation.
+                Culturally, meteors have been viewed as omens or celestial
+                messages, continuing to inspire wonder and curiosity. Observing
+                these celestial events, particularly during meteor showers in
+                dark, clear skies, remains a popular activity, linking us to the
+                broader mysteries of the universe.
+              </p>
+              <a href="meteor.html" class="btn btn-dark">Show more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="asteroid">
+        <div class="row">
+          <div class="col col-sm-12 col-lg-6">
+            <div class="content">
+              <h2>ASTEROID</h2>
+              <p>
+                Asteroids are rocky objects orbiting the Sun, primarily located
+                in the asteroid belt between Mars and Jupiter. These remnants
+                from the early solar system, formed around 4.6 billion years
+                ago, are composed of rock, metal, and sometimes carbon compounds
+                and water. Classified based on their location and composition,
+                such as C-type (carbonaceous), S-type (silicaceous), and M-type
+                (metallic), asteroids offer invaluable insights into planetary
+                formation and the solar system's history. While some, like the
+                Near-Earth Asteroids (NEAs), pose potential impact threats,
+                asteroids also hold promise for future space mining due to their
+                rich deposits of rare elements. Notable missions like NASA's
+                OSIRIS-REx and Japan's Hayabusa2 have advanced our understanding
+                by returning samples to Earth, highlighting the scientific and
+                economic significance of these celestial bodies.
+              </p>
+              <a href="asteroid.html" class="btn btn-dark">Show more</a>
+            </div>
+          </div>
+          <div class="col col-sm-12 col-lg-6">
+            <div class="photo">
+              <img
+                src="https://media2.giphy.com/media/3o85xoqSjlCGpJpL7G/200w.gif?cid=6c09b952o84qdavbvpqnwxfywx3737psxs6soa04izfbfqve&ep=v1_gifs_search&rid=200w.gif&ct=g"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="comet">
+        <div class="row">
+          <div class="col col-sm-12 col-lg-6">
+            <div class="photo">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Comet_and_tail_animation.gif"
+              />
+            </div>
+          </div>
+          <div class="col col-sm-12 col-lg-6">
+            <div class="content">
+              <h2>COMET</h2>
+              <p>
+                Comets are icy celestial bodies originating from the outer
+                regions of the solar system, known for their bright comas and
+                long, glowing tails. Composed of a solid nucleus of rock, dust,
+                and frozen gases, comets develop a surrounding coma and
+                distinctive tails as they approach the Sun, with the heat
+                causing their ices to sublimate. They primarily come from the
+                Kuiper Belt and Oort Cloud, with short-period comets having
+                orbits less than 200 years and long-period comets taking much
+                longer. Famous comets like Halley's Comet and Comet Hale-Bopp
+                have captivated observers and provided valuable scientific
+                insights into the early solar system. Missions such as ESA's
+                Rosetta and NASA's Stardust have studied comets up close,
+                enhancing our understanding of these ancient celestial
+                wanderers. Historically, comets have been viewed with awe and
+                superstition, appearing as significant symbols in human culture.
+              </p>
+              <a href="comet.html" class="btn btn-dark">Show more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="constellations">
+        <div class="row">
+          <div class="col col-sm-12 col-lg-6">
+            <div class="content">
+              <h2>CONSTELLATIONS</h2>
+              <p>
+                Constellations are patterns of stars in the night sky that have
+                been recognized and named by various cultures throughout
+                history, serving both navigational and cultural purposes. With
+                origins dating back to ancient civilizations like the Greeks and
+                Babylonians, these star groups often embody mythological
+                stories, such as Orion the hunter and Ursa Major the Great Bear.
+                Today, the International Astronomical Union recognizes 88
+                constellations that cover the entire sky, providing a
+                standardized framework for astronomers to identify and study
+                celestial objects. Constellations also hold cultural
+                significance, reflected in art and folklore, and continue to
+                inspire awe and curiosity about the cosmos, bridging the gap
+                between science and mythology.
+              </p>
+              <a href="constellations.html" class="btn btn-dark">Show more</a>
+            </div>
+          </div>
+          <div class="col col-sm-12 col-lg-6">
+            <div class="photo">
+              <img
+                src="https://www.wired.com/wp-content/uploads/2015/03/Leo_2.gif"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="galaxies">
+        <div class="row">
+          <div class="col col-sm-12 col-lg-6">
+            <div class="photo">
+              <img
+                src="https://i.pinimg.com/originals/a9/ca/2f/a9ca2f2a2f8f65e78766dc1b2e01e044.gif"
+              />
+            </div>
+          </div>
+          <div class="col col-sm-12 col-lg-6">
+            <div class="content">
+              <h2>GALAXIES</h2>
+              <p>
+                Galaxies are immense systems comprising billions of stars, along
+                with gas, dust, and dark matter, all bound together by gravity.
+                These cosmic structures, which include our Milky Way, vary in
+                shape and size, from the elegant spirals with their winding arms
+                to the smooth, rounded ellipticals and the chaotic irregulars.
+                Each galaxy contains diverse components such as nebulae, where
+                new stars are born, and often a supermassive black hole at its
+                center, influencing its dynamics. Galaxies form and evolve
+                through processes like mergers, star formation, and feedback
+                from supernovae and black holes. Observing these magnificent
+                systems with optical, radio, and space telescopes provides
+                invaluable insights into the large-scale structure of the
+                universe, the nature of dark matter, and the forces shaping
+                cosmic evolution.
+              </p>
+              <a href="galaxies.html" class="btn btn-dark">Show more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </div>
+
+    <br />
+
+    <div class="footer">
+      <br />
+      <h1 class="foot-name">FOLLOW US</h1>
+      <br />
+      <div class="folo">
+        <a href="https://www.instagram.com/"
+          ><i class="bi bi-instagram" style="color: pink"></i
+        ></a>
+        <a href="https://www.facebook.com/"
+          ><i class="bi bi-facebook" style="color: #3388dd"></i
+        ></a>
+        <a href="https://www.whatsapp.com/"
+          ><i class="bi bi-whatsapp" style="color: green"></i
+        ></a>
+        <a href="https://twitter.com/"
+          ><i class="bi bi-twitter-x" style="color: white"></i
+        ></a>
+        <a href="https://telegram.com/"
+          ><i class="bi bi-telegram" style="color: blue"></i
+        ></a>
+        <br /><br />
+      </div>
+    </div>
+  </body>
+</html>
